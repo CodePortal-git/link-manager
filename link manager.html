@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CodePortal</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #050505;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* Background effect */
+body::before {
+    content: "";
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background: #0066ff;
+    filter: blur(180px);
+    opacity: 0.25;
+    top: -150px;
+    left: -150px;
+}
+
+.container {
+    width: 95%;
+    max-width: 430px;
+    text-align: center;
+    animation: show 1s ease;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo {
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#0066ff,#ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    box-shadow: 0 0 40px #0066ff;
+}
+
+h1 {
+    margin-top: 25px;
+    font-size: 34px;
+    color: white;
+}
+
+p {
+    margin: 10px 0 30px;
+    color: #aaa;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(0,102,255,0.4);
+    padding: 16px;
+    border-radius: 15px;
+    font-size: 18px;
+    transition: .3s;
+    backdrop-filter: blur(10px);
+}
+
+a:hover {
+    background: #0066ff;
+    box-shadow: 0 0 25px #0066ff;
+    transform: translateY(-4px);
+}
+
+.footer {
+    margin-top: 35px;
+    color: #555;
+    font-size: 13px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        CP
+    </div>
+
+    <h1>CodePortal</h1>
+
+<p>
+    لیست کانال‌های ما
+</p>
+
+<p>
+    Build. Create. Innovate.
+</p>
+
+
+    <div class="links">
+
+        <a href="https://t.me/CodePortal">🔵 Telegram</a>
+
+        <a href="https://rubika.ir/CodePortal">🔵 Rubika</a>
+
+        <a href="https://eitaa.com/CodePortal">🔵 Eitaa</a>
+
+        <a href="https://ble.ir/CodePortal">🔵 Bale</a>
+
+        <a href="https://splus.ir/CodePortal">🔵 Soroush</a>
+
+        <a href="https://instagram.com/Code.Portal">📷 Instagram</a>
+
+        <a href="https://youtube.com/CodePortal-Tube">▶ YouTube</a>
+
+    </div>
+
+    <div class="footer">
+        © CodePortal
+    </div>
+
+</div>
+
+</body>
+</html>
